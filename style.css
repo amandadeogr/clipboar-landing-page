@@ -1,0 +1,278 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.cabecalho {
+    background: url(/images/bg-header-desktop.png) no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 40px;
+    margin-bottom: 50px;
+}
+
+.imagem-cabecalho {
+    width: 8%;
+    padding: 15px;
+}
+
+.titulo-principal {
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.paragrafo {
+    font-size: 15px;
+    color: hsl(201, 11%, 66%);
+    max-width: 70%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.estilo-botoes {
+    display: flex;
+    gap: 10px;
+}
+button {
+    width: 150px;
+    font-size: 0.8em;
+    padding: 10px;
+    border-radius: 80px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-ios {
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 1px 1px 5px hsl(171, 66%, 44%);
+}
+
+.btn-mac {
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 1px 1px 5px hsl(233, 100%, 69%);
+}
+
+.titulo-principal, .titulo-h2, .titulo-h3 {
+    color: hsl(210, 10%, 33%);
+}
+
+.cabecalho .paragrafo {
+    width: 40%;
+    text-align: center;
+    margin-bottom: 17px;
+}
+
+
+/* */
+section {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.titulo-h2 {
+    font-size: 1.4em;
+    margin-bottom: .8em;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.primeira-secao-textos, .terceira-secao-texto-imagem {
+   text-align: center;
+}
+
+.primeira-secao-textos .paragrafo  {
+    width: 45%;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* */
+.segunda-secao-textos-imagem {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+
+.imagem-computador {
+    margin-left: -80px;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 400px;
+    margin: 0;
+}
+
+.vantagens-produtos .paragrafo {
+    width: 60%;
+    line-height: 2;
+    text-align: left;
+}
+
+.titulo-h3 {
+    margin-bottom: 15px;
+}
+
+/* */
+.terceira-secao-texto-imagem .paragrafo {
+    width: 65%;
+    margin: 40px auto;
+}
+
+.imagem-devices {
+    width: 80%;
+}
+
+/* */
+.quarta-secao-texto-imagem-lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.elenca-itens-workflow {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 50px 80px 0;
+}
+
+.elenca-itens-workflow .paragrafo {
+    width: 85%;
+    margin: auto;
+}
+
+.itens-workflow {
+    width: 100%;
+}
+
+/* */
+.quinta-section-logos-marcas {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    margin: 60px 0;
+}
+
+
+/* */
+.sexta-section-textos-botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* */
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 0%, 93%);
+    padding: 30px;
+    color: hsl(201, 11%, 66%);
+}
+
+.rodape a {
+    color: hsl(201, 11%, 66%);
+    font-size: 0.8em;
+}
+
+.links-logo-header {
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+}
+
+.img-logo-rodape {
+    width: 50px;
+}
+
+.icones-redes-sociais img {
+    width: 15px;
+    margin: 5px;
+}
+
+.attribution {
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+}
+
+@media (max-width: 900px) {
+    h2 + p, h1 + p {
+        width: 290px!important;
+    }
+
+    .titulo-h2 {
+        font-size: 1.3em;
+        max-width: 70%;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .segunda-secao-textos-imagem {
+        flex-direction: column;
+    }
+
+    .textos {
+        margin: 0 20px 10px;
+        padding: 20px;
+        flex-wrap: nowrap;
+        text-align: center;
+    }
+
+    .textos .paragrafo {
+        width: 350px;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .imagem-computador {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 0 20px;
+    }
+
+    .elenca-itens-workflow {
+        flex-direction: column;
+    }
+
+    .itens-workflow {
+        margin-bottom: 30px;
+    }
+
+    .quinta-section-logos-marcas {
+        flex-direction: column;
+    }
+
+    .links-logo-header {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .img-logo-rodape {
+        width: 10%;
+        height: 10%;
+    }
+}
+
